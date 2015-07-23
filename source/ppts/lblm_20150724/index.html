@@ -1,0 +1,141 @@
+<!--
+    Powered By nodePPT - This is probably the best web presentation tool so far!
+    version: 1.0.0-1
+    site: https://github.com/ksky521/nodePPT
+-->
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>关于懒爸懒妈的思考总结-20150724 - By 郝杰</title>
+    <link rel="stylesheet" media="all" href="/stylesheets/ppts/nodeppt2.css">
+    <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="/stylesheets/ppts/phone.css">
+    <link rel="stylesheet" media="print" href="/stylesheets/ppts/pdf.css">
+    <link rel="stylesheet" href="/stylesheets/ppts/monokai_sublime.css">
+    <link rel="stylesheet" href="/stylesheets/ppts/font-awesome.css">
+</head>
+<body style="opacity: 1;">
+<div class="slides">
+    <slides id="container">
+        <slide class="slide current pagedown" data-transition="vertical3d"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>关于懒爸懒妈的思考总结-20150724</h1>
+<p><small>郝杰</small></p>
+
+</article></section></slide>
+<slide class="slide next pagedown" data-transition="vertical3d"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>1. 发现推荐</h1>
+
+</article></section></slide>
+<slide class="slide far-next pagedown" data-transition="vertical3d"><section class="slide-wrapper"><article>
+<p><img src="/images/ppts/lblm/fxtj.png" alt="faxian"></p>
+
+</article></section></slide>
+<slide class="slide" data-transition="vertical3d"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>2. 发现经验</h1>
+
+</article></section></slide>
+<slide class="slide" data-transition="vertical3d"><section class="slide-wrapper"><article>
+<p><img src="/images/ppts/lblm/fxjy-1.png" alt="faxian"></p>
+
+</article></section></slide>
+<slide class="slide" data-transition="vertical3d"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>3. 关于产品</h1>
+
+</article></section></slide>
+<slide class="slide" data-transition="vertical3d"><section class="slide-wrapper"><article>
+<h2>3.1 专题活动</h2>
+
+</article></section></slide>
+<slide class="slide" data-transition="vertical3d"><section class="slide-wrapper"><article>
+<p><img src="/images/ppts/lblm/hd.png" alt="faxian"></p>
+
+</article></section></slide>
+<slide class="slide" data-transition="vertical3d"><section class="slide-wrapper"><article>
+<p>可做一些专题活动，如夏季可做防蚊产品专题，沙滩玩具专题，某品牌夏装专题，9月可做开学季专题。等等等等。。。</p>
+
+</article></section></slide>
+<slide class="slide" data-transition="vertical3d"><section class="slide-wrapper"><article>
+<h2>3.2 个人中心加入宝宝出生年月</h2>
+
+</article></section></slide>
+<slide class="slide" data-transition="vertical3d"><section class="slide-wrapper"><article>
+<p>做母婴类产品，用户的需求与宝宝的年龄紧密相关，让用户输入宝宝月龄，我们可获得一个至关重要的参数。便于以后分析用户需求。</p>
+<p>因不了解技术实现难度和产品后续功能设置，仅供参考。</p>
+
+</article></section></slide>
+<slide class="slide" data-transition="vertical3d"><section class="slide-wrapper"><article>
+<h2>3.3  发现栏目的细分</h2>
+
+</article></section></slide>
+<slide class="slide" data-transition="vertical3d"><section class="slide-wrapper"><article>
+<p>建议将发现内所有栏目按照宝宝年龄做更细致的分类（包括推荐、海淘、经验）。如孕妈妈、0~1岁、1~3岁、3~6岁、6岁以上。</p>
+
+</article></section></slide>
+        <!--slide class="slide thank-you-slide segue nobackground">
+            <article class="flexbox vleft auto-fadein">
+                <h2>Q &amp; A</h2>
+                <h3>&lt;Thank You!&gt;</h3>
+            </article>
+        </slide-->
+        <slide data-transition="cover-diamond" class="slide logoslide dark nobackground">
+            <article class="flexbox vcenter">
+              <h2 style="color: white;">Powered By nodePPT v1.0.0-1</h2>
+            </article>
+          </slide>
+        <div class="slideTip" id="tip"></div>
+    </slides>
+</div>
+<canvas style="display: none;" id="drawBoard" class="draw-board" width="900" height="700"></canvas>
+<div class="progress"><span style="width: 7.14286%;" id="progress"></span></div>
+<div id="_buttons">
+    <div class="_btn-box" id="_btn-box" style="display:none;">
+        <button class="fa fa-arrow-circle-left" id="_btn-prev"></button>
+        <button class="fa fa-arrow-circle-right" id="_btn-next"></button>
+        <button class="fa fa-paint-brush" id="_btn-brush"></button>
+        <button class="fa fa-compress" id="_btn-overview" data-toggle="fa fa-expand"></button>
+    </div>
+    <button class="fa fa-bars" id="_btn-bar" data-toggle="fa fa-close"></button>
+</div>
+<script src="/javascripts/ppts/mix.js"></script>
+<script>
+var base = location.protocol + '//' + location.host;
+
+MixJS.config({
+    baseURL: [ base, 'js'].join('/')+'/'
+});
+
+</script>
+<script src="/javascripts/ppts/broadcast.js"></script>
+<script src="/javascripts/ppts/nodeppt.js"></script>
+<script>
+Slide.init({
+    containerID: 'container',
+    drawBoardID: 'drawBoard',
+    slideClass: '.slide',
+    buildClass: '.build',
+    progressID: 'progress',
+    transition: 'cover-diamond',
+    width: 1100,
+    dir: './',
+
+    //打开下面的注释就开启postMessage方式
+    //访问网址127.0.0.1:8080/ppt/demo#client
+    control:{
+        type: 'postMessage',
+        args:{
+            isControl:  false
+        }
+    },
+
+    tipID: 'tip'
+});
+MixJS.loadJS('highlight/hljs-0.8.js',function(){
+    hljs.tabReplace = '  ';
+    hljs.initHighlightingOnLoad();
+});
+</script>
+<script src="/javascripts/ppts/demo.js"></script>
+<link rel="stylesheet" href="/stylesheets/ppts/demo.css">
+
+
+<div id="xunlei_com_thunder_helper_plugin_d462f475-c18e-46be-bd10-327458d045bd"></div><div class="img-full transparent"></div><canvas width="1436" height="798" style="position: absolute; top: 0px;"></canvas></body></html>
