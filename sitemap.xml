@@ -7,25 +7,30 @@
   </url>
   <url>
     <loc>http://janehao.github.io/blog/archives/</loc>
-    <lastmod>2015-07-07T12:02:08+08:00</lastmod>
+    <lastmod>2015-07-24T00:14:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://janehao.github.io/</loc>
-    <lastmod>2015-07-07T12:02:08+08:00</lastmod>
+    <lastmod>2015-07-24T00:14:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://janehao.github.io/ppts/</loc>
-    <lastmod>2015-07-07T12:02:08+08:00</lastmod>
+    <lastmod>2015-07-24T00:14:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>http://janehao.github.io/ppts/lblm_20150724/index.html</loc>
+    <lastmod>2015-07-24T00:14:08+08:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>http://janehao.github.io/ppts/wansheng/index.html</loc>
-    <lastmod>2015-07-07T11:58:07+08:00</lastmod>
+    <lastmod>2015-07-24T00:09:05+08:00</lastmod>
     <priority>0.6</priority>
   </url>
 </urlset>
